@@ -1,3 +1,4 @@
+import khodro.Kashti;
 import khodro.Khodro;
 import khodro.Mashin;
 import khodro.Motor;

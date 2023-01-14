@@ -1,9 +1,12 @@
+package khodro;
+
 import khodro.Khodro;
-import khodro.Mashin;
 
 public class Kashti extends Khodro {
+
     @Override
     public boolean harakat() {
+        protectedmethod();
         return true;
     }
 

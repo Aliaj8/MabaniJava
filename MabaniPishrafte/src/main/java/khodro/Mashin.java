@@ -1,6 +1,12 @@
 package khodro;
+
+import khodro.Girbox;
+import khodro.Khodro;
+import khodro.Runnande;
+import khodro.SandoghDar;
+
 //motor & car is a :vehicle
-public class Mashin extends Khodro implements SandoghDar,Girbox{
+public class Mashin extends Khodro implements SandoghDar, Girbox {
     //data or dade
     boolean ayadarmashinbaz;
     private String mark;
@@ -30,6 +36,7 @@ public class Mashin extends Khodro implements SandoghDar,Girbox{
         ayadarmashinbaz=false;
     }
     public boolean harakat(){
+        protectedmethod();
         if(ayaroshanast && !ayadarmashinbaz){
             return true;
         }

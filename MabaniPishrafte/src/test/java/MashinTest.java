@@ -1,5 +1,4 @@
 import khodro.Mashin;
-import khodro.Runnande;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -20,7 +19,7 @@ public class MashinTest {
         Assertions.assertFalse(ayaharktmiknd);
         Assertions.assertTrue(ayavolvoharktmiknd);
 
-        Runnande runnande = new Runnande();
+
 
 
     }
