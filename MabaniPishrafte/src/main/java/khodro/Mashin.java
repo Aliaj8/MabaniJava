@@ -1,11 +1,12 @@
 package khodro;
-
-public class Mashin {
+//motor & car is a :vehicle
+public class Mashin extends Khodro implements SandoghDar,Girbox{
     //data or dade
-    boolean ayaroshanast;
     boolean ayadarmashinbaz;
-    String mark;
-    Runnande runnande;
+    private String mark;
+    private Runnande runnande;
+    private int bak;
+    String noeDande;
 
     //constractor
     public Mashin(){
@@ -15,14 +16,13 @@ public class Mashin {
 
     }
 
-    //methode
-    public void roshan(){
-        ayaroshanast =true;
-    }
-    public void khamohs(){
-        ayaroshanast =false;
+    public Mashin(String mark, int bak, String noeDande) {
+        this.mark=mark;
+        this.bak=bak;
+        this.noeDande=noeDande;
 
     }
+
     public void bazkardandar(){
         ayadarmashinbaz=true;
     }
@@ -39,4 +39,18 @@ public class Mashin {
 
     }
 
+    @Override
+    public String getmark() {
+        return mark;
+    }
+
+    @Override
+    public String typedande() {
+        return "otuomatic";
+    }
+
+    @Override
+    public int Gonjayesh() {
+        return 100;
+    }
 }
