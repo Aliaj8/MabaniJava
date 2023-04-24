@@ -5,6 +5,8 @@ import khodro.Khodro;
 import khodro.Runnande;
 import khodro.SandoghDar;
 
+import java.util.Objects;
+
 //motor & car is a :vehicle
 public class Mashin extends Khodro implements SandoghDar, Girbox {
     //data or dade
@@ -22,10 +24,10 @@ public class Mashin extends Khodro implements SandoghDar, Girbox {
 
     }
 
-    public Mashin(String mark, int bak, String noeDande) {
+    public Mashin(String mark, int bak, Dande noeDande) {
         this.mark=mark;
         this.bak=bak;
-        this.noeDande=noeDande;
+
 
     }
 
@@ -59,5 +61,18 @@ public class Mashin extends Khodro implements SandoghDar, Girbox {
     @Override
     public int Gonjayesh() {
         return 100;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Mashin mashin = (Mashin) o;
+        return bak == mashin.bak && Objects.equals(mark, mashin.mark) && Objects.equals(noeDande, mashin.noeDande);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(mark, bak, noeDande);
     }
 }

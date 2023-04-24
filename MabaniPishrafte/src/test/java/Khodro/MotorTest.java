@@ -1,3 +1,5 @@
+package Khodro;
+
 import khodro.Khodro;
 import khodro.Motor;
 import org.junit.jupiter.api.Assertions;
